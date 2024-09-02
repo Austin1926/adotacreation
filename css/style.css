@@ -1,0 +1,189 @@
+*{
+  font-family: "Outfit", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 8%;
+    background-color: white;
+    position: fixed;}
+
+nav .logo img{
+    width: 130px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+ nav ul li{
+    list-style: none;
+ }
+
+ nav ul li a{
+    text-decoration: none;
+    padding: 12px 25px;
+    color: black;
+    transition: 0.5s ease;
+    border-radius: 8px;
+ }
+
+ nav ul li a:hover{
+    background-color:#08B3DA ;
+    color: white;
+ }
+nav .fa-bars{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    nav .logo img {
+        width: 120px;  
+}
+nav{
+    padding: 15px 8%;
+    }
+nav .fa-bars {
+    display: block;
+    font-size: 25px;
+    }
+
+nav ul{
+    align-items: start;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    width: 100%;
+    padding: 10px 8px; 
+    left: 0;
+    display: none;
+    
+}
+
+nav ul li {
+    margin: 10px 0;
+    
+}
+nav ul li a{
+    display: block;
+    
+}
+
+}
+@media only screen and (min-width: 1520px){
+    nav{
+        padding: 10px 15%;
+    }
+    
+}
+/* <!-- Home pgae --> */
+.home-page{
+    height: 100vh;
+    width: 100%;
+    padding: 8% ;
+    background-image: url(../images/bg/bg-1.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+}
+.home-page .con-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.home-page .text{
+    width: 45%;
+}
+.home-page .text h1{
+   font-size: 40px;
+   color: white;
+ 
+   
+}
+.home-page .text p{
+   font-size: 16px;
+   color: white;
+   font-weight: 300px;
+   margin-top: 2%;
+   margin-bottom: 11%;
+  
+}
+.home-page .text a{
+   background-color: #08B3DA;
+   text-decoration: none;
+   padding: 15px 24px;
+   border-radius: 10px;
+   color: white;
+   font-size: 16px;
+
+  }
+
+.home-page .text a:hover{
+   background-color: white;
+   color: #08B3DA;
+}
+
+
+.home-page img{
+   height: 80vh;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .home-page .text{
+        width: 100%;
+    }
+    .home-page .text h1{
+       font-size: 30px;
+      
+    }
+    .home-page .text p{
+       font-size: 16px;
+    
+    }
+    .home-page{
+        min-height: 100vh; 
+    
+    }
+
+    .home-page img{
+        height:unset;
+        width: 100%;
+        margin-top: 90px;
+     }
+     .home-page .con-1{
+        flex-wrap: wrap;
+    
+    
+    }
+}
+    
+@media only screen and (min-width: 1520px){
+    .home-page{
+        padding: 8% 15%;
+    }
+
+    .home-page img{
+        height: 70vh;
+        
+     
+     }
+     
+    
+}
